@@ -13,14 +13,23 @@
     <p> Display Numbers (1 -100)</p>
     <script>
 
-    //Display Numbers (1 -100)//
+   //Display Numbers (1 -100)//
 
     let a = parseInt( prompt ("enter the start number 1 - 100")) ;
     let b = parseInt ( prompt ("enter the end number 1 - 100") ) ;
-
-    for (let i = a; i <= b; i++) {
-              console.log(i);
+    
+    function dispnum() {
+        if  (a >= 1 && a <= 100 && b >= 1 && b <= 100) {
+            for (let i = a; i <= b; i++) {
+                console.log(i);
          }
+        } else {
+            alert("you enter wrong number");
+        }
+       
+    }
+
+     dispnum() 
 
   
 
